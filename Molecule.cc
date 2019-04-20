@@ -7,11 +7,11 @@
 using namespace std;
 using namespace GelCore;
 
-Horizon::Molecule(void)
+Molecule::Molecule(void)
 {
 }
 
-Horizon::Molecule(std::string infilename)
+Molecule::Molecule(std::string infilename)
 {
 	filename = infilename;
 	

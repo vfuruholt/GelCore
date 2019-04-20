@@ -108,6 +108,7 @@
     <ClCompile Include="Horizon.cc" />
     <ClCompile Include="Matrix4.cc" />
     <ClCompile Include="Measurement.cc" />
+    <ClCompile Include="Molecule.cc" />
     <ClCompile Include="Receiver.cc" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -126,6 +127,7 @@
     <ClInclude Include="Horizon.hh" />
     <ClInclude Include="Matrix4.hh" />
     <ClInclude Include="Measurement.hh" />
+    <ClInclude Include="Molecule.hh" />
     <ClInclude Include="Receiver.hh" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Stdafx.h" />

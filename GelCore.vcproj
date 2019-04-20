@@ -210,7 +210,11 @@
 				RelativePath=".\Measurement.cc"
 				>
 			</File>
-			<File
+      <File
+				RelativePath=".\Molecule.cc"
+				>
+      </File>
+      <File
 				RelativePath=".\Receiver.cc"
 				>
 			</File>
@@ -280,7 +284,11 @@
 				RelativePath=".\Measurement.hh"
 				>
 			</File>
-			<File
+      <File
+				RelativePath=".\Molecule.hh"
+				>
+      </File>
+      <File
 				RelativePath=".\Receiver.hh"
 				>
 			</File>

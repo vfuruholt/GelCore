@@ -41,6 +41,9 @@
     <ClCompile Include="Measurement.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Molecule.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Receiver.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -77,6 +80,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Measurement.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Molecule.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Receiver.hh">
