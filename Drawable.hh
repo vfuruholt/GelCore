@@ -12,10 +12,13 @@ namespace GelCore
 	// Span3D is a box defined by a corner point (origin) and three vectors.
 	// For bounding boxes, the three vectors should be orthogonal and spanning the 
 	// local coordinate space for an object.
+	// TODO: Define this struct according to text definition above.
 	struct Span3D
 	{
 		Vertex3 VtxMin;
 		Vertex3 VtxMax;
+		//Vertex3 origin;
+		//std::vector<Vertex3*> spanVectors; 
 	};
 
 	public class Drawable
