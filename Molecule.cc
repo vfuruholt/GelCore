@@ -79,22 +79,26 @@ int Molecule::LoadXYZ()
 		if (lineCounter == 0) {
 			// Store the first number which should equal the number of atoms
 			iss >> atoms;
+			++lineCounter;
 			continue;
 		}
 		if (str.empty()) {
 			// Simply skip empty lines
+			++lineCounter;
 			continue;
 		}
 		// Create a new vertex
 		Vertex3* vtx = new Vertex3();
-		iss >> vtx->x >> vtx->y >> vtx->z;
+		char atomType;
+		iss >> atomType >> vtx->x >> vtx->y >> vtx->z;
+		atomTypes.push_back(atomType);
 		vertices.push_back(vtx);
 
 		++lineCounter;
 	}
 
-	if (lineCounter == atoms) {
-		return lineCounter;
+	if (vertices.size() == atoms) {
+		return atoms;
 	}
 	else {
 		// Return error value if the number of loaded lines does not match file header number.

@@ -15,6 +15,7 @@ namespace GelCore
 		virtual void CalcBoundingBox() override;
 	private:
 		std::vector<Vertex3*> vertices;
+		std::vector<char> atomTypes;
 		int LoadXYZ();
 	};
 }
