@@ -77,6 +77,10 @@ namespace GelCore
 			return dotProduct(*this);
 		}
 
+		double euclidNorm() {
+			return sqrt(innerProduct());
+		}
+
 		const Vertex3 crossProduct(const Vertex3& v) const {
 			Vertex3 result(*this);
 			result.x = y*v.z - z*v.y;

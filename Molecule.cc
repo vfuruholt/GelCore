@@ -30,7 +30,14 @@ bool Molecule::Load()
 
 void Molecule::DrawPoints()
 {
-	glPointSize(4);
+	// Assume the two first elements in the vertices list are neighbours, and make the pointsize radius 50% of their distance.
+	double dist;
+	Vertex3* vtx1 = vertices.at(0);
+	Vertex3* vtx2 = vertices.at(1);
+	Vertex3 vtxDiff = *vtx2 - *vtx1;
+	dist = vtxDiff.euclidNorm();
+	glPointSize(dist);
+	
 	GLdouble colorTop[3] = {1.0, 0.0, 0.0};
 	GLdouble colorBottom[3] = {0.0, 0.0, 1.0};
 	GLdouble color[3];
